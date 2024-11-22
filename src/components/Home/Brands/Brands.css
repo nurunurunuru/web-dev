@@ -1,0 +1,129 @@
+.brands {
+    padding: 10px 0;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.brands .brands-heading {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.brands .brands-heading span {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: rgba(6, 216, 137, 0.03);
+    width: 100%;
+    line-height: 1;
+    text-align: center;
+}
+
+.brands .brands-heading h5 {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+    margin-top: -18px;
+}
+
+.brands .heading .headline .logos {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: nowrap;
+}
+
+.brands .heading .headline .logos .partner-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--white-trans-20);
+    height: 60px;
+    width: 150px;
+}
+
+.brands .heading .headline .logos .partner-logo img {
+    width: 80%;
+    opacity: 0.4;
+    transition: all 0.5s;
+}
+
+.brands .heading .headline .logos .partner-logo:hover img {
+    width: 80%;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.brands .heading {
+    overflow: hidden;
+}
+
+.brands .headline {
+    animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+    .brands .brands-heading span {
+        font-size: 65px;
+    }
+
+    .brands .brands-heading h5 {
+        font-size: 22px;
+        margin-top: -25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .brands {
+        padding: 50px 0;
+        overflow-x: hidden;
+    }
+
+    .brands .headline {
+        animation: scroll 30s linear infinite;
+    }
+
+    .brands .brands-heading span {
+        font-family: var(--font-secondary);
+        font-weight: 700;
+        font-size: 70px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: rgba(6, 216, 137, 0.03);
+        width: 100%;
+        line-height: 1;
+    }
+
+    .brands .brands-heading h5 {
+        font-family: var(--font-secondary);
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        color: var(--white);
+        margin-top: -25px;
+    }
+}

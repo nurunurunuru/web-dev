@@ -1,0 +1,35 @@
+.short-step {
+    padding: 60px 0;
+    background-color: #0f0f0f;
+}
+
+.short-step .flex .child {
+    width: 100%;
+}
+
+.short-step .flex .child img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    object-fit: cover;
+}
+
+.short-step .child h4 {
+    font-family: var(--font-secondary);
+    padding: 10px 0 40px 0;
+}
+
+.short-step p {
+    color: var(--white-trans-70);
+}
+
+.short-step .step-sec {
+    gap: 35px;
+}
+
+@media (min-width: 992px) {
+    .short-step .flex .child {
+        width: 50%;
+    }
+}

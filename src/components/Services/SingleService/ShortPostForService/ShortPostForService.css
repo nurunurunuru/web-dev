@@ -1,0 +1,35 @@
+.shortPost {
+    padding: 80px 0;
+    background-color: #0f0f0f;
+}
+
+.shortPost .short-post-banner {
+    height: 320px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.shortPost .short-post-banner img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.shortPost .short-post-banner img:hover {
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
+.shortPost .short-post-content {
+    flex-wrap: wrap;
+}
+
+.shortPost .short-post-content p {
+    width: 100%;
+    padding-top: 20px;
+    opacity: 0.7;
+    text-align: justify;
+}
+
+@media (min-width: 992px) {}

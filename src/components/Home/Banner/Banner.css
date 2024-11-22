@@ -1,0 +1,220 @@
+.banner {
+    background-color: var(--black-trans-20);
+    background-image: url(../../../assets/banner-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0 75px 0;
+    height: 510px;
+    width: 100%;
+    max-width: 100%;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+}
+
+/* Fallback background color for browsers that don't support custom properties */
+@supports (--css: variables) {
+    .banner {
+        --black-trans-20: rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Fallback background color for browsers that don't support @supports */
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .banner {
+        background-color: #333333;
+        /* Fallback for IE/Edge */
+    }
+}
+
+/* Fallback for browsers that don't support background-blend-mode */
+@supports not (mix-blend-mode: multiply) {
+    .banner {
+        background-blend-mode: normal;
+    }
+}
+
+.banner-logo {
+    width: 70px;
+    height: 70px;
+}
+
+.banner-1,
+.banner-2,
+.banner-4,
+.banner-5 {
+    display: none;
+}
+
+.banner-3 {
+    display: block;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -20px;
+    transform: translateX(-50%) translateY(35%);
+}
+
+.banner-heading {
+    padding-top: 70px;
+}
+
+@media (min-width: 576px) {
+    .banner-3 {
+        display: block;
+        width: 350px;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -20px;
+        transform: translateX(-50%) translateY(30%);
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .banner {
+        height: 650px;
+    }
+
+    .banner-1 {
+        display: block;
+        width: 160px;
+        position: absolute;
+        left: 0;
+        top: 100px;
+    }
+
+    .banner-2 {
+        display: block;
+        width: 230px;
+        position: absolute;
+        left: 0;
+        top: 380px;
+    }
+
+    .banner-3 {
+        display: block;
+        width: 350px;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -20px;
+        transform: translateX(-50%) translateY(31%);
+    }
+
+    .banner-4 {
+        display: block;
+        width: 230px;
+        position: absolute;
+        right: 0;
+        top: 360px;
+    }
+
+    .banner-5 {
+        display: block;
+        width: 160px;
+        position: absolute;
+        right: 0;
+        top: 100px;
+    }
+
+    .banner-heading {
+        padding-top: 120px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .banner {
+        height: 850px;
+    }
+
+    .banner-1 {
+        display: block;
+        width: 180px;
+        position: absolute;
+        left: 0;
+        top: 100px;
+    }
+
+    .banner-2 {
+        display: block;
+        width: 260px;
+        position: absolute;
+        left: 0;
+        top: 530px;
+    }
+
+    .banner-3 {
+        display: block;
+        width: 650px;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -20px;
+        transform: translateX(-50%) translateY(18%);
+    }
+
+    .banner-4 {
+        display: block;
+        width: 260px;
+        position: absolute;
+        right: 0;
+        top: 480px;
+    }
+
+    .banner-5 {
+        display: block;
+        width: 180px;
+        position: absolute;
+        right: 0;
+        top: 100px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .banner-1 {
+        display: block;
+        width: 200px;
+        position: absolute;
+        left: 0;
+        top: 100px;
+    }
+
+    .banner-2 {
+        display: block;
+        width: 300px;
+        position: absolute;
+        left: 0;
+        top: 530px;
+    }
+
+    .banner-3 {
+        display: block;
+        width: 650px;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -20px;
+        transform: translateX(-50%) translateY(18%);
+    }
+
+    .banner-4 {
+        display: block;
+        width: 320px;
+        position: absolute;
+        right: 0;
+        top: 480px;
+    }
+
+    .banner-5 {
+        display: block;
+        width: 200px;
+        position: absolute;
+        right: 0;
+        top: 100px;
+    }
+}

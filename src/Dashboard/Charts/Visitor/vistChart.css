@@ -1,0 +1,72 @@
+.visit-chart {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #6f6e6e73;
+}
+
+.visit-chart .visit-chart-head {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.visit-chart .visit-chart-head h4 {
+    margin-top: 10px;
+}
+
+.visit-chart .visit-chart-head h6 {
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.text-gray {
+    color: #00000082;
+}
+
+.visit-chart .right p {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .visit-chart {
+        width: 45%;
+        height: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px #6f6e6e73;
+    }
+}
+
+@media (min-width: 1200px) {
+    .visit-chart {
+        width: 45%;
+        height: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px #6f6e6e73;
+    }
+}
+
+@media (min-width: 1400px) {
+    .visit-chart {
+        width: 49%;
+        height: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px #6f6e6e73;
+    }
+}

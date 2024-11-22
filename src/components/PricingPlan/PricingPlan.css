@@ -1,0 +1,452 @@
+.pricing {
+    padding: 30px 0;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    background-color: #0f0f0f;
+}
+
+.pricing-head {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pricing-title {
+    width: 100%;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.billing-buttons {
+    width: 100%;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+}
+
+.pricing-head h3 {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: var(--white);
+    margin-bottom: 7px;
+}
+
+.pricing-head p {
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: #b5b5b5;
+    margin-bottom: 0;
+}
+
+.billing-buttons .button-box {
+    border-bottom: none;
+    background: #161a1e;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.billing-buttons .button-box button {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid #22262a;
+    width: 140px;
+    height: 53px;
+    cursor: pointer;
+}
+
+.billing-buttons .button-box button.active {
+    background-color: #22262a;
+}
+
+.pricing-cards {
+    margin-top: 55px;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+}
+
+.plans-cards {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards-normal {
+    background-image: url(../../assets/pricing-bg-31.png), linear-gradient(#121212, #121212);
+    border: 1px solid #1e1e1e;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.cards-normal .card-top {
+    padding: 40px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, .05);
+    gap: 30px;
+}
+
+.cards-normal .card-top .left h5 {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--primary);
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.cards-normal .card-top .left .plan-prices {
+    display: flex;
+}
+
+.cards-normal .card-top .left .plan-prices .sup {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: .03em;
+    color: var(--white);
+    vertical-align: middle;
+    margin-top: -10px;
+}
+
+.cards-normal .card-top .left .plan-prices h2 {
+    margin-bottom: 0;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 44px;
+    color: var(--white);
+}
+
+.cards-normal .card-top .left .plan-prices .sub {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--primary);
+    margin-top: 20px;
+}
+
+.cards-normal .card-content {
+    padding: 30px 35px 40px;
+}
+
+.cards-normal .card-content ul li {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-secondary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #e3e3e3;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.cards-normal .card-content ul li svg {
+    fill: var(--primary);
+}
+
+.cards-normal .card-content ul li svg path {
+    fill: var(--black);
+}
+
+.card-professional {
+    background-image: url(../../assets/pricing-bg-32.png), linear-gradient(#06D889, #06D889);
+    border: 1px solid #1e1e1e;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.card-professional .card-top {
+    padding: 40px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, .05);
+    gap: 30px;
+}
+
+.card-professional .card-top .left h5 {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--black);
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.card-professional .card-top .left .plan-prices {
+    display: flex;
+}
+
+.card-professional .card-top .left .plan-prices .sup {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: .03em;
+    color: var(--black);
+    vertical-align: middle;
+    margin-top: -10px;
+}
+
+.card-professional .card-top .left .plan-prices h2 {
+    margin-bottom: 0;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 44px;
+    color: var(--black);
+}
+
+.card-professional .card-top .left .plan-prices .sub {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.card-professional .card-top .right {
+    background-image: url(../../assets/offerPrice.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 90px;
+    width: 90px;
+}
+
+.card-professional .card-top .right div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-professional .card-top .right div h3 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    margin: 0;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.card-professional .card-top .right div p {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    color: var(--white);
+    font-family: var(--font-secondary);
+}
+
+.card-professional .card-content {
+    padding: 30px 35px 40px;
+}
+
+.card-professional .card-content ul li {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-secondary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: var(--black);
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.card-professional .card-content ul li svg {
+    fill: var(--dark);
+}
+
+.card-professional .card-content ul li svg path {
+    fill: var(--primary);
+}
+
+.card-content .pay-btn {
+    padding-top: 50px;
+}
+
+.card-content .pay-btn button {
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    border: 0;
+}
+
+.card-content .pay-btn button.pay-button {
+    width: 200px;
+    height: 50px;
+    background-color: #1b1f23;
+    color: #fff;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .03em;
+    border-radius: 5px;
+    padding: 14px 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card-content .pay-btn button.pay-button::after {
+    background-color: #fff;
+}
+
+.card-content .pay-btn button.pay-button:hover {
+    color: #1b1f23;
+}
+
+.cards-normal,
+.card-professional {
+    width: 100%;
+    margin: 10px;
+}
+
+
+@media (min-width: 576px) {
+    .billing-buttons .button-box button {
+        font-family: var(--font-secondary);
+        font-weight: 500;
+        font-size: 17px;
+        text-transform: capitalize;
+        color: var(--white);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: 1px solid #22262a;
+        width: 162px;
+        height: 53px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .cards-normal,
+    .card-professional {
+        width: 55%;
+    }
+}
+
+@media (min-width: 992px) {
+    .pricing {
+        padding: 120px 0;
+    }
+
+    .pricing-head {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .pricing-title {
+        width: 720px;
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .billing-buttons {
+        width: 480px;
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        justify-content: center;
+    }
+
+    .cards-normal,
+    .card-professional {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .cards-normal,
+    .card-professional {
+        width: 390px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .cards-normal,
+    .card-professional {
+        width: 460px;
+    }
+}

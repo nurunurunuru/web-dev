@@ -1,0 +1,338 @@
+.consultancy {
+    padding: 20px 0 100px 0;
+    width: 100%;
+    max-width: 100%;
+    background-image: url(../../../assets/home6-banner-bg.png), linear-gradient(#1e1c22, #1e1c22);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.consultancy .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.consultancy .row .content,
+.consultancy .row .slide {
+    width: 100%;
+    flex: 0 0 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.consultancy .sliderDiv img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.consultancy .content h2 {
+    padding: 20px 0;
+}
+
+.consultancy .content h2 span {
+    background-image: url(../../../assets/banner-text-vec.png);
+    background-repeat: no-repeat;
+    background-size: 98%;
+    padding: 0 20px;
+    background-position: center;
+    display: inline-block;
+}
+
+.consultancy .content .buttons {
+    padding: 20px 0;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.consultancy .content a {
+    display: flex;
+    width: 140px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--text-sm);
+    text-decoration: none;
+    color: var(--white);
+}
+
+.consultancy .content a.consult {
+    color: var(--black);
+}
+
+.consultancy .content a.consult:hover {
+    color: var(--white);
+}
+
+.consultancy .content a.link {
+    color: var(--white);
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    gap: 5px;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+
+.consultancy .content a.link img {
+    width: 60px;
+    height: 60px;
+}
+
+.consultancy .content a.link .textbutton {
+    width: 100%;
+    position: absolute;
+    left: 15px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.consultancy .content a.link svg {
+    width: 20px;
+    height: 20px;
+    transition: all 0.4s;
+}
+
+.consultancy .content a.link:hover svg {
+    transform: rotate(45deg);
+}
+
+.consultSlider {
+    width: 100%;
+    max-width: 100%;
+}
+
+.consultSlider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: scale(1.4);
+}
+
+.consultSlider .sliderDiv::after {
+    content: "";
+    height: 150%;
+    width: 220px;
+    background-color: rgba(6, 216, 137, .2);
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-80%) rotate(-20deg);
+    transform-origin: top;
+    z-index: 1;
+    transition: .5s;
+}
+
+.social {
+    z-index: 50;
+    gap: 20px;
+    padding: 0 20px;
+    top: 60%;
+    transform: translateY(-50%);
+    transition: all 0.4s;
+}
+
+.social a:hover svg {
+    fill: var(--primary);
+    transition: all 0.4s;
+}
+
+@supports (-ms-ime-align: auto) {
+    .social {
+        -ms-transform: translateY(-50%);
+        -ms-transition: all 0.4s;
+    }
+
+    .consultancy .content h2 span {
+        -ms-background-size: cover;
+    }
+
+    .social a:hover svg {
+        -ms-transition: all 0.4s;
+    }
+}
+
+@media (min-width: 576px) {
+    .consultancy .content .buttons {
+        gap: 60px;
+    }
+
+    .consultancy .content a {
+        display: flex;
+        width: 150px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--text-sm);
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    .consultancy .sliderDiv img {
+        width: 100%;
+        height: 460px;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    .consultancy .content a.link {
+        width: 168px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .consultancy {
+        padding: 100px 0 100px 120px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .consultSlider .sliderDiv::after {
+        content: "";
+        height: 150%;
+        width: 280px;
+        background-color: rgba(6, 216, 137, .2);
+        position: absolute;
+        top: -120px;
+        left: 50%;
+        transform: translateX(-80%) rotate(-20deg);
+        transform-origin: top;
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .social {
+        z-index: 50;
+        gap: 20px;
+        padding: 0 20px;
+        top: 45%;
+        transform: translateY(-50%);
+        transition: all 0.4s;
+    }
+
+    .consultancy .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        flex-direction: row;
+    }
+
+    .consultancy .row .content {
+        width: 50%;
+        flex: 0 0 50%;
+        padding: 0 0 0 0;
+        text-align: start;
+    }
+
+    .consultancy .row .slide {
+        width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .consultancy .content .buttons {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .consultancy .content a {
+        font-family: var(--font-secondary);
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: .03em;
+        text-transform: uppercase;
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        transition: .5s;
+    }
+
+    .consultancy a.consult {
+        letter-spacing: 0.03em;
+        font-size: 16px;
+        width: 188px;
+        height: 52px;
+        color: var(--black);
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+    .consultancy a.consult:hover {
+        color: var(--white);
+        text-transform: capitalize;
+    }
+
+    .consultSlider img {
+        transform: scale(1);
+    }
+
+    .consultancy .sliderDiv img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .consultancy h2 {
+        font-size: 50px;
+    }
+
+    .consultancy p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        line-height: 35px;
+    }
+
+    .social {
+        z-index: 50;
+        gap: 60px;
+        padding: 0 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.4s;
+    }
+}
+
+@media (min-width: 1400px) {
+    .consultancy h2 {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .consultancy h2 {
+        font-size: 85px;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+
+    .consultancy .row .content {
+        width: 50%;
+        flex: 0 0 50%;
+        padding: 0;
+        text-align: start;
+    }
+
+    .consultancy .row .content p {
+        padding: 0 20px 0 0;
+        text-align: start;
+    }
+}

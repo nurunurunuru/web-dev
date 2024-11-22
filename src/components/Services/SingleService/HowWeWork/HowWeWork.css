@@ -1,0 +1,72 @@
+.howWork {
+    padding: 80px 0;
+    background-color: #0f0f0f;
+}
+
+.howWork h3 {
+    padding: 0 0 30px 0;
+}
+
+.howWork .flex {
+    flex-wrap: wrap;
+}
+
+.howWork .workSystem {
+    width: 250px;
+    border-top: 1px solid var(--white-trans-40);
+    padding: 0 15px 0 0;
+    font-family: var(--font-secondary);
+    margin-top: 50px;
+}
+
+.howWork .workSystem h5 {
+    color: var(--white-trans-70);
+    padding: 10px 0;
+}
+
+.howWork .workSystem p {
+    color: var(--white-trans-70);
+    padding: 10px 0;
+}
+
+.howWork .workSystem .icon {
+    background-color: var(--primary);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: -37px 0 0 0;
+    transition: all 0.5s ease;
+}
+
+.howWork .workSystem:hover .icon {
+    margin-top: -42px;
+}
+
+.howWork .workSystem {
+    width: 300px;
+    border-top: 1px solid var(--white-trans-40);
+    padding: 0 15px;
+    font-family: var(--font-secondary);
+    margin-top: 50px;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {
+    .howWork .workSystem {
+        width: 250px;
+        border-top: 1px solid var(--white-trans-40);
+        padding: 0 15px 0 0;
+        font-family: var(--font-secondary);
+        margin-top: 50px;
+    }
+}
